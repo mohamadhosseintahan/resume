@@ -259,3 +259,9 @@
   new PureCounter();
 
 })()
+
+window.onbeforeprint=()=>{
+  document.querySelectorAll('.aos-init').forEach(item=>{
+    item.classList.add('aos-animate')
+  })
+}
